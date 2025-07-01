@@ -28,8 +28,8 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            display-name = "QWERTY";
+        Alphabet {
+            display-name = "Anymak:END";
 
             // ------------------------------------------------------------------------------
             // |  Q  |  W  |  E  |  R  |  T  |  MUTE |  PP   |  Y  |  U   |  I  |  O  |  P  |
@@ -47,8 +47,8 @@
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
         };
 
-        raise_layer {
-            display-name = "SYMBOL";
+        Numbers_and_Symbols {
+            display-name = "Number & Symbol Layer";
 
             // -----------------------------------------------------------------------------
             // |  !  |  @  |  #  |  $  |  %  | LCTRL | RCTRL |  ^  |  &  |  *  |  (  |  )  |
@@ -57,10 +57,10 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp LCTRL  &kp RCTRL  &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR
-  &trans    &trans  &trans    &trans    &trans     &kp LALT   &kp RALT   &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH
-  &trans    &trans  &trans    &trans    &trans                           &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE
-                    &kp LGUI  &trans    &kp SPACE                        &kp RET    &trans     &kp RALT
+  &kp PERCENT             &kp LA(LS(NUMBER_2))  &kp DOLLAR                  &kp LA(Y)                  &kp LS(LA(N8))   &mt LESS_THAN LEFT_BRACE  &mt GREATER_THAN RIGHT_BRACE  &kp NUMBER_1  &kp NUMBER_2        &kp NUMBER_3          &kp NUMBER_4      &kp N5
+  &kp PIPE                &kp TILDE             &kp EQUAL                   &kp MINUS                  &kp PLUS         &kp HASH                  &kp BACKSLASH                 &kp AT        &kp LEFT            &kp DOWN              &kp UP            &kp RIGHT
+  &mt LEFT_CONTROL LA(U)  &mt LEFT_ALT GRAVE    &mt LEFT_COMMAND AMPERSAND  &mt LEFT_SHIFT UNDERSCORE  &kp EXCLAMATION                                                          &kp NUMBER_6  &mt RIGHT_SHIFT N7  &mt RIGHT_COMMAND N8  &mt RIGHT_ALT N9  &mt RIGHT_CONTROL N0
+                                                &trans                      &trans                     &trans                                                                   &trans        &trans              &trans
             >;
         };
 
