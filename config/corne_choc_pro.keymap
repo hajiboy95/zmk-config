@@ -42,7 +42,7 @@
             bindings = <
   &kp DE_Q               &kp DE_K           &kp DE_O                 &kp DE_U                  &kp DE_Y      &mt DE_LEFT_BRACKET DE_LEFT_PARENTHESIS  &mt DE_RIGHT_BRACKET DE_RIGHT_PARENTHESIS  &kp DE_V   &kp DE_D              &kp DE_C                &kp DE_L            &kp DE_F
   &kp DE_H               &kp DE_A           &kp DE_E                 &kp DE_I                  &kp DE_COMMA  &kp TAB                                  &kp DE_SLASH                               &kp DE_G   &kp DE_T              &kp DE_R                &kp DE_N            &kp DE_S
-  &mt LEFT_CONTROL DE_J  &mt LEFT_ALT DE_Z  &mt LEFT_COMMAND DE_SQT  &mt LEFT_SHIFT DE_PERIOD  &kp DE_X                                                                                          &kp DE_B   &mt RIGHT_SHIFT DE_P  &mt RIGHT_COMMAND DE_M  &mt RIGHT_ALT DE_W  &mt RIGHT_CONTROL DE_EQUAL
+  &mt LEFT_CONTROL DE_J  &mt LEFT_ALT DE_Z  &mt LEFT_COMMAND DE_SQT  &mt LEFT_SHIFT DE_PERIOD  &kp DE_X                                                                                          &kp DE_B   &mt RIGHT_SHIFT DE_P  &mt RIGHT_COMMAND DE_M  &mt RIGHT_ALT DE_W  &mt RIGHT_CONTROL DE_QUESTION
                                             &kp DELETE               &mo 2                     &kp SPACE                                                                                         &kp ENTER  &mo 1                 &kp BACKSPACE
             >;
 
