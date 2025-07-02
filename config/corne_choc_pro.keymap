@@ -40,7 +40,7 @@
 
             bindings = <
   &kp Q               &kp K           &kp O                 &kp U                  &kp Y      &mt LEFT_BRACKET LEFT_PARENTHESIS  &mt RIGHT_BRACKET RIGHT_PARENTHESIS  &kp V      &kp D              &kp C                &kp L            &kp F
-  &kp H               &kp A           &kp E                 &kp I                  &kp COMMA  &kp TAB                            &kp SLASH                            &kp G      &kp T              &kp R                &kp N            &kp S
+  &kp H               &kp A           &kp E                 &kp I                  &kp COMMA  &kp TAB                            &mt BACKSLASH SLASH                  &kp G      &kp T              &kp R                &kp N            &kp S
   &mt LEFT_CONTROL J  &mt LEFT_ALT Z  &mt LEFT_COMMAND SQT  &mt LEFT_SHIFT PERIOD  &kp X                                                                              &kp B      &mt RIGHT_SHIFT P  &mt RIGHT_COMMAND M  &mt RIGHT_ALT W  &mt RIGHT_CONTROL QUESTION
                                       &kp DELETE            &mo 2                  &kp ENTER                                                                          &kp SPACE  &mo 1              &kp BACKSPACE
             >;
@@ -59,7 +59,7 @@
 
             bindings = <
   &kp PERCENT             &kp LA(LS(NUMBER_2))  &kp DOLLAR                  &kp LA(Y)                  &kp LS(LA(N8))   &mt LESS_THAN LEFT_BRACE  &mt GREATER_THAN RIGHT_BRACE  &kp NUMBER_1  &kp NUMBER_2        &kp NUMBER_3          &kp NUMBER_4      &kp N5
-  &kp PIPE                &kp TILDE             &kp EQUAL                   &kp MINUS                  &kp PLUS         &kp HASH                  &kp BACKSLASH                 &kp AT        &kp LEFT            &kp DOWN              &kp UP            &kp RIGHT
+  &kp PIPE                &kp TILDE             &kp EQUAL                   &kp MINUS                  &kp PLUS         &kp HASH                  &kp ASTERISK                  &kp AT        &kp LEFT            &kp DOWN              &kp UP            &kp RIGHT
   &mt LEFT_CONTROL LA(U)  &mt LEFT_ALT GRAVE    &mt LEFT_COMMAND AMPERSAND  &mt LEFT_SHIFT UNDERSCORE  &kp EXCLAMATION                                                          &kp NUMBER_6  &mt RIGHT_SHIFT N7  &mt RIGHT_COMMAND N8  &mt RIGHT_ALT N9  &mt RIGHT_CONTROL N0
                                                 &trans                      &trans                     &trans                                                                   &trans        &trans              &trans
             >;
