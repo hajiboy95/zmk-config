@@ -59,10 +59,10 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-  &kp DE_PERCENT                 &mt DE_DOLLAR DE_EURO  &kp DE_O_UMLAUT          &kp DE_U_UMLAUT               &kp DE_DEGREE       &mt DE_LESS_THAN DE_LEFT_BRACE  &mt DE_GREATER_THAN DE_RIGHT_BRACE  &kp N1        &kp N2              &kp N3                &kp NUMBER_4      &kp N5
-  &kp DE_PIPE                    &kp DE_A_UMLAUT        &kp DE_EQUAL             &kp DE_MINUS                  &kp DE_PLUS         &kp DE_HASH                     &kp DE_ASTERISK                     &kp DE_AT     &kp LEFT            &kp DOWN              &kp UP            &kp RIGHT
-  &mt LEFT_CONTROL DE_AMPERSAND  &mt LEFT_ALT DE_GRAVE  &mt LEFT_COMMAND DE_DQT  &mt LEFT_SHIFT DE_UNDERSCORE  &kp DE_EXCLAMATION                                                                      &kp NUMBER_6  &mt RIGHT_SHIFT N7  &mt RIGHT_COMMAND N8  &mt RIGHT_ALT N9  &mt RIGHT_CONTROL N0
-                                                        &trans                   &trans                        &trans                                                                                  &trans        &trans              &trans
+  &kp DE_PERCENT                 &mt DE_DOLLAR DE_EURO  &kp DE_O_UMLAUT          &kp DE_U_UMLAUT               &mt DE_DEGREE DE_CARET  &mt DE_LESS_THAN DE_LEFT_BRACE  &mt DE_GREATER_THAN DE_RIGHT_BRACE  &kp N1        &kp N2              &kp N3                &kp NUMBER_4      &kp N5
+  &kp DE_PIPE                    &kp DE_A_UMLAUT        &kp DE_EQUAL             &kp DE_MINUS                  &kp DE_PLUS             &kp DE_HASH                     &kp DE_ASTERISK                     &kp DE_AT     &kp LEFT            &kp DOWN              &kp UP            &kp RIGHT
+  &mt LEFT_CONTROL DE_AMPERSAND  &mt LEFT_ALT DE_GRAVE  &mt LEFT_COMMAND DE_DQT  &mt LEFT_SHIFT DE_UNDERSCORE  &kp DE_EXCLAMATION                                                                          &kp NUMBER_6  &mt RIGHT_SHIFT N7  &mt RIGHT_COMMAND N8  &mt RIGHT_ALT N9  &mt RIGHT_CONTROL N0
+                                                        &trans                   &trans                        &trans                                                                                      &trans        &trans              &trans
             >;
         };
 
