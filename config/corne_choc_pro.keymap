@@ -11,8 +11,6 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
-&mt { flavor = "balanced"; };
-
 / {
     chosen { zmk,physical-layout = &five_col_layout; };
 };
