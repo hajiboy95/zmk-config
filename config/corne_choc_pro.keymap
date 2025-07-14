@@ -71,7 +71,7 @@
             bindings = <
   &mt LS(LA(N1)) LA(N1)    &mt LS(LA(N2)) LA(N2)    &mt LS(LA(N3)) LA(N3)    &mt LS(LA(NUMBER_4)) LA(NUMBER_4)  &mt LA(LS(N0)) LA(N0)           &trans  &trans  &kp ESCAPE                       &msc SCRL_RIGHT                               &msc SCRL_UP    &msc SCRL_DOWN  &msc SCRL_LEFT
   &mt LS(LA(LG(G))) LA(G)  &mt LS(LA(LG(H))) LA(H)  &mt LS(LA(LG(J))) LA(J)  &mt LS(LA(LG(K))) LA(K)            &mt LA(DE_PERIOD) LA(DE_COMMA)  &trans  &trans  &mt LS(LG(N5)) LS(LG(NUMBER_4))  &mmv MOVE_LEFT                                &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT
-  &kp LS(LA(G))            &kp LS(LA(J))            &kp LS(LA(K))            &kp LS(LA(L))                      &kp LS(LA(S))                                   &mt LA(LG(DOWN)) LA(LG(D))       &mt LG(DE_LEFT_BRACKET) LG(DE_RIGHT_BRACKET)  &kp F2          &kp LS(LG(P))   &mt LA(DOWN) LA(UP_ARROW)
+  &kp LS(LA(G))            &kp LS(LA(H))            &kp LS(LA(J))            &kp LS(LA(K))                      &kp LS(LA(S))                                   &mt LA(LG(DOWN)) LA(LG(D))       &mt LG(DE_LEFT_BRACKET) LG(DE_RIGHT_BRACKET)  &kp F2          &kp LS(LG(P))   &mt LA(DOWN) LA(UP_ARROW)
                                                     &mt LA(B) LA(W)          &trans                             &mt LA(F) LA(Q)                                 &mkp LCLK                        &mkp MCLK                                     &mkp RCLK
             >;
         };
