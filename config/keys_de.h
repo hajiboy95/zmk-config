@@ -373,7 +373,3 @@
 /* ~ - On Mac (German), ~ is Alt + N */
 #undef DE_TILDE
 #define DE_TILDE (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_N)))
-
-/* ~ - On Mac (German), ~ is Alt + N */
-#undef DE_TILDE
-#define DE_TILDE (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_N)))
