@@ -42,7 +42,7 @@
             bindings = <
   &kp DE_Q        &kp DE_K               &kp DE_O           &kp DE_U                    &kp DE_Y      &mt DE_LEFT_BRACKET DE_LEFT_PARENTHESIS  &mt DE_RIGHT_BRACKET DE_RIGHT_PARENTHESIS  &kp DE_V   &kp DE_D                &kp DE_C            &kp DE_L                &kp DE_F
   &kp DE_H        &kp DE_A               &kp DE_E           &kp DE_I                    &kp DE_COMMA  &kp TAB                                  &mt DE_BACKSLASH DE_SLASH                  &kp DE_G   &kp DE_T                &kp DE_R            &kp DE_N                &mt DE_SHARP_S DE_S
-  &kp LEFT_SHIFT  &mt LEFT_CONTROL DE_Z  &mt LEFT_ALT DE_J  &mt LEFT_COMMAND DE_PERIOD  &kp DE_X                                                                                          &kp DE_B   &mt RIGHT_COMMAND DE_P  &mt RIGHT_ALT DE_M  &mt RIGHT_CONTROL DE_W  &kp RIGHT_SHIFT
+  &kp LEFT_SHIFT  &mt LEFT_CONTROL DE_Z  &mt LEFT_ALT DE_J  &mt LEFT_COMMAND DE_PERIOD  &kp DE_X                                                                                          &kp DE_B   &mt RIGHT_COMMAND DE_P  &mt RIGHT_ALT DE_M  &mt RIGHT_CONTROL DE_W  &kp CAPSLOCK
                                          &kp DELETE         &mo 2                       &kp ENTER                                                                                         &kp SPACE  &mo 1                   &kp BACKSPACE
             >;
 
@@ -61,7 +61,7 @@
             bindings = <
   &kp DE_PERCENT               &mt DE_DOLLAR DE_EURO      &kp DE_O_UMLAUT                &kp DE_U_UMLAUT          &mt DE_DEGREE DE_CARET          &mt DE_LESS_THAN DE_LEFT_BRACE  &mt DE_GREATER_THAN DE_RIGHT_BRACE  &kp N1        &kp N2                &kp N3            &kp NUMBER_4          &kp N5
   &kp DE_PIPE                  &mt DE_TILDE DE_A_UMLAUT   &kp DE_EQUAL                   &kp DE_MINUS             &kp DE_PLUS                     &kp DE_HASH                     &kp DE_ASTERISK                     &kp DE_AT     &kp LEFT              &kp DOWN          &kp UP                &kp RIGHT
-  &mt LEFT_SHIFT DE_AMPERSAND  &mt LEFT_CONTROL DE_GRAVE  &mt LEFT_ALT DE_DOUBLE_QUOTES  &mt LEFT_COMMAND DE_SQT  &mt DE_EXCLAMATION DE_QUESTION                                                                      &kp NUMBER_6  &mt RIGHT_COMMAND N7  &mt RIGHT_ALT N8  &mt RIGHT_CONTROL N9  &mt RIGHT_SHIFT N0
+  &mt LEFT_SHIFT DE_AMPERSAND  &mt LEFT_CONTROL DE_GRAVE  &mt LEFT_ALT DE_DOUBLE_QUOTES  &mt LEFT_COMMAND DE_SQT  &mt DE_EXCLAMATION DE_QUESTION                                                                      &kp NUMBER_6  &mt RIGHT_COMMAND N7  &mt RIGHT_ALT N8  &mt RIGHT_CONTROL N9  &mt CAPSLOCK N0
                                                           &trans                         &trans                   &trans                                                                                              &trans        &trans                &trans
             >;
         };
@@ -69,10 +69,10 @@
         Aerospace_and_Makros {
             display-name = "Aerospace, Mouse & VS Code Commands";
             bindings = <
-  &mt LS(LA(N1)) LA(N1)    &mt LS(LA(N2)) LA(N2)    &mt LS(LA(N3)) LA(N3)    &mt LS(LA(NUMBER_4)) LA(NUMBER_4)  &mt LA(LS(N0)) LA(N0)           &trans  &trans  &kp ESCAPE                       &msc SCRL_RIGHT                               &msc SCRL_UP    &msc SCRL_DOWN  &msc SCRL_LEFT
-  &mt LS(LA(LG(G))) LA(G)  &mt LS(LA(LG(H))) LA(H)  &mt LS(LA(LG(J))) LA(J)  &mt LS(LA(LG(K))) LA(K)            &mt LA(DE_PERIOD) LA(DE_COMMA)  &trans  &trans  &mt LS(LG(N5)) LS(LG(NUMBER_4))  &mmv MOVE_LEFT                                &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT
-  &kp LS(LA(G))            &kp LS(LA(H))            &kp LS(LA(J))            &kp LS(LA(K))                      &kp LS(LA(S))                                   &mt LA(LG(DOWN)) LA(LG(D))       &mt LG(DE_LEFT_BRACKET) LG(DE_RIGHT_BRACKET)  &kp F2          &kp LS(LG(P))   &mt LA(DOWN) LA(UP_ARROW)
-                                                    &mt LA(B) LA(Q)          &trans                             &mt LA(F) LA(W)                                 &mkp LCLK                        &mkp MCLK                                     &mkp RCLK
+  &mt LS(LC(LA(LG(N1)))) LC(LA(LG(N1)))  &mt LS(LC(LA(LG(N2)))) LC(LA(LG(N2)))  &mt LS(LC(LA(LG(N3)))) LC(LA(LG(N3)))  &mt LS(LC(LA(LG(NUMBER_4)))) LC(LA(LG(NUMBER_4)))  &mt LS(LC(LA(LG(N0)))) LC(LA(LG(N0)))           &trans  &trans  &kp ESCAPE                       &msc SCRL_RIGHT                               &msc SCRL_UP    &msc SCRL_DOWN  &msc SCRL_LEFT
+  &mt LS(LC(LA(LG(Q)))) LC(LA(LG(Q)))    &mt LS(LC(LA(LG(W)))) LC(LA(LG(W)))    &mt LS(LC(LA(LG(E)))) LC(LA(LG(E)))    &mt LS(LC(LA(LG(R)))) LC(LA(LG(R)))                &mt LC(LA(LG(DE_PERIOD))) LC(LA(LG(DE_COMMA)))  &trans  &trans  &mt LS(LG(N5)) LS(LG(NUMBER_4))  &mmv MOVE_LEFT                                &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT
+  &kp LC(LA(LG(G)))                      &kp LC(LA(LG(H)))                      &kp LC(LA(LG(J)))                      &kp LC(LA(LG(K)))                                  &kp LC(LA(LG(M)))                                               &mt LA(LG(DOWN)) LA(LG(D))       &mt LG(DE_LEFT_BRACKET) LG(DE_RIGHT_BRACKET)  &kp F2          &kp LS(LG(P))   &mt LA(DOWN) LA(UP_ARROW)
+                                                                                &mt LC(LA(LG(D))) LC(LA(LG(A)))        &trans                                             &mt LC(LA(LG(F))) LC(LA(LG(S)))                                 &mkp LCLK                        &mkp MCLK                                     &mkp RCLK
             >;
         };
 
