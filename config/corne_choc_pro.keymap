@@ -33,15 +33,20 @@
             display-name = "Anymak:END";
 
             // ------------------------------------------------------------------------------
-            // |  Q  |  W  |  E  |  R  |  T  |  MUTE |  PP   |  Y  |  U   |  I  |  O  |  P  |
-            // |  A  |  S  |  D  |  F  |  G  |  LALT |  RALT |  H  |  J   |  K  |  L  |  ;  |
-            // |  Z  |  X  |  C  |  V  |  B  |               |  N  |  M   |  ,  |  .  |  /  |
-            //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
+            // |  Q  |  K  |  O  |  U  |  Y  |  [ (  |  ] )  |  V  |  D  |  C  |  L  |  F  |
+            // |  H  |  A  |  E  |  I  |  ,  |  TAB  |  / \  |  G  |  T  |  R  |  N  |  S  |
+            // |  ⇧  | ⌃ Z | ⎇ J| ⌘ . |  X  |       |       |  B  | ⌘ P | ⎇ M | ⌃ M |  ⇪  |
+            //             | DEL | LWR | ENT |       |       | SPC | RSE | BSP |
+            //
+            // Legend:
+            // - () indicates Mod-Tap (e.g., [ becomes LEFT_BRACKET when tapped, LEFT_PARENTHESIS when held)
+            // - ⎇ = Alt, ⌃ = Control, ⌘ = Command, ⇧ = Shift, ⇪ = Caps
+            // - LWR = Layer 2, RSE = Layer 1
 
             bindings = <
   &kp Q           &kp K               &kp O           &kp U                    &kp Y      &mt LEFT_BRACKET LEFT_PARENTHESIS  &mt RIGHT_BRACKET RIGHT_PARENTHESIS  &kp V      &kp D                &kp C            &kp L                &kp F
   &kp H           &kp A               &kp E           &kp I                    &kp COMMA  &kp TAB                            &mt BACKSLASH SLASH                  &kp G      &kp T                &kp R            &kp N                &kp S
-  &kp LEFT_SHIFT  &mt LEFT_CONTROL Z  &mt LEFT_ALT J  &mt LEFT_COMMAND PERIOD  &kp X                                                                              &kp B      &mt RIGHT_COMMAND P  &mt RIGHT_ALT M  &mt RIGHT_CONTROL W  &kp RIGHT_SHIFT
+  &kp LEFT_SHIFT  &mt LEFT_CONTROL Z  &mt LEFT_ALT J  &mt LEFT_COMMAND PERIOD  &kp X                                                                              &kp B      &mt RIGHT_COMMAND P  &mt RIGHT_ALT M  &mt RIGHT_CONTROL W  &kp CAPSLOCK
                                       &kp DELETE      &mo 2                    &kp ENTER                                                                          &kp SPACE  &mo 1                &kp BACKSPACE
             >;
 
@@ -52,15 +57,21 @@
             display-name = "Number & Symbol Layer";
 
             // -----------------------------------------------------------------------------
-            // |  !  |  @  |  #  |  $  |  %  | LCTRL | RCTRL |  ^  |  &  |  *  |  (  |  )  |
-            // |     |     |     |     |     |  LALT | RALT  |  -  |  =  |  [  |  ]  |  \  |
-            // |     |     |     |     |     |               |  _  |  +  |  {  |  }  | "|" |
-            //                    | GUI |     | SPC |               | ENT |     | ALT |
+            // |  %  |  @  |  $  |  Y  |  *^ |  < {  |  > }  |  1  |  2  |  3  |  4  |  5  |
+            // |  |  |  ~  |  =  |  -  |  +  |  #    |  *   |  @  | ←   |  ↓  |  ↑   |  →  |
+            // | ⇧ & | ⌃ ` | ⎇ U |⌘ ' | ! ? |               |  6 | ⌘ 7 | ⎇ 8 |  ⌃ 9 | ⇪ 0 |
+            //                    |     |     |     |               |     |     |     |
+            //
+            // Legend:
+            // - ⎇ = Alt, ⌃ = Control, ⌘ = Command, ⇧ = Shift, ⇪ = Caps
+            // - () indicates Mod-Tap
+            // - Layer is mainly numeric/symbol with modifiers and nav keys
+
 
             bindings = <
   &kp PERCENT               &kp LA(LS(NUMBER_2))    &kp DOLLAR          &kp LA(Y)             &mt LS(LA(N8)) CARET      &mt LESS_THAN LEFT_BRACE  &mt GREATER_THAN RIGHT_BRACE  &kp NUMBER_1  &kp NUMBER_2          &kp NUMBER_3      &kp NUMBER_4          &kp N5
   &kp PIPE                  &kp TILDE               &kp EQUAL           &kp MINUS             &kp PLUS                  &kp HASH                  &kp ASTERISK                  &kp AT        &kp LEFT              &kp DOWN          &kp UP                &kp RIGHT
-  &mt LEFT_SHIFT AMPERSAND  &mt LEFT_CONTROL GRAVE  &mt LEFT_ALT LA(U)  &mt LEFT_COMMAND SQT  &mt EXCLAMATION QUESTION                                                          &kp NUMBER_6  &mt RIGHT_COMMAND N7  &mt RIGHT_ALT N8  &mt RIGHT_CONTROL N9  &mt RIGHT_SHIFT N0
+  &mt LEFT_SHIFT AMPERSAND  &mt LEFT_CONTROL GRAVE  &mt LEFT_ALT LA(U)  &mt LEFT_COMMAND SQT  &mt EXCLAMATION QUESTION                                                          &kp NUMBER_6  &mt RIGHT_COMMAND N7  &mt RIGHT_ALT N8  &mt RIGHT_CONTROL N9  &mt CAPSLOCK N0
                                                     &trans              &trans                &trans                                                                            &trans        &trans                &trans
             >;
         };
@@ -68,10 +79,10 @@
         Aerospace_and_Makros {
             display-name = "Aerospace, Mouse & VS Code Commands";
             bindings = <
-  &mt LS(LA(N0)) LA(N0)    &mt LS(LA(NUMBER_1)) LA(NUMBER_1)  &mt LS(LA(NUMBER_2)) LA(NUMBER_2)  &mt LS(LA(NUMBER_3)) LA(NUMBER_3)  &mt LS(LA(NUMBER_4)) LG(LA(NUMBER_4))  &trans  &trans  &kp ESCAPE                       &msc SCRL_RIGHT                         &msc SCRL_UP    &msc SCRL_DOWN  &msc SCRL_LEFT
-  &mt LS(LA(LG(G))) LA(G)  &mt LS(LA(LG(H))) LA(H)            &mt LS(LA(LG(J))) LA(J)            &mt LS(LA(LG(K))) LA(K)            &mt LA(PERIOD) LA(COMMA)               &trans  &trans  &mt LS(LG(N5)) LS(LG(NUMBER_4))  &mmv MOVE_LEFT                          &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT
-  &kp LS(LA(G))            &kp LS(LA(H))                      &kp LS(LA(J))                      &kp LS(LA(K))                      &kp LS(LA(S))                                          &mt LA(LG(DOWN)) LA(LG(D))       &mt LG(LEFT_BRACKET) LG(RIGHT_BRACKET)  &kp F2          &kp LS(LG(P))   &mt LA(DOWN) LA(UP_ARROW)
-                                                              &mt LA(B) LA(W)                    &trans                             &mt LA(F) LA(Q)                                        &mkp LCLK                        &mkp MCLK                               &mkp RCLK
+  &mt LS(LC(LA(LG(N1)))) LC(LA(LG(N1)))  &mt LS(LC(LA(LG(N2)))) LC(LA(LG(N2)))  &mt LS(LC(LA(LG(N3)))) LC(LA(LG(N3)))  &mt LS(LC(LA(LG(NUMBER_4)))) LC(LA(LG(NUMBER_4)))  &mt LS(LC(LA(LG(N0)))) LC(LA(LG(N0)))           &trans  &trans  &kp ESCAPE                       &msc SCRL_RIGHT                               &msc SCRL_UP    &msc SCRL_DOWN  &msc SCRL_LEFT
+  &mt LS(LC(LA(LG(Q)))) LC(LA(LG(Q)))    &mt LS(LC(LA(LG(W)))) LC(LA(LG(W)))    &mt LS(LC(LA(LG(E)))) LC(LA(LG(E)))    &mt LS(LC(LA(LG(R)))) LC(LA(LG(R)))                &mt LC(LA(LG(PERIOD))) LC(LA(LG(COMMA)))  &trans  &trans  &mt LS(LG(N5)) LS(LG(NUMBER_4))  &mmv MOVE_LEFT                                &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT
+  &kp LC(LA(LG(G)))                      &kp LC(LA(LG(H)))                      &kp LC(LA(LG(J)))                      &kp LC(LA(LG(K)))                                  &kp LC(LA(LG(M)))                                               &mt LA(LG(DOWN)) LA(LG(D))       &mt LG(LEFT_BRACKET) LG(RIGHT_BRACKET)  &kp F2          &kp LS(LG(P))   &mt LA(DOWN) LA(UP_ARROW)
+                                                                                &mt LC(LA(LG(D))) LC(LA(LG(A)))        &trans                                             &mt LC(LA(LG(F))) LC(LA(LG(S)))                                 &mkp LCLK                        &mkp MCLK                                     &mkp RCLK
             >;
         };
 
@@ -79,10 +90,21 @@
             display-name = "Fn-Keys & Sys-Control";
 
             // --------------------------------------------------------------------------------
-            // |  1  |  2  |  3  |  4  |  5    |  LCTRL | RCTRL |  6  |  7  |  8  |  9  |  0  |
-            // | BT1 | BT2 | BT3 | BT4 | BT5   |  LALT  | RALT  | LFT | DWN |  UP | RGT |     |
-            // | BTCR| RGB | RST | BOOT| Unlock|        |       |     |     |     |     |     |
-            //                    | GUI |     | SPC   |        | ENT   |     | ALT |
+            // | 🔇  | VOL- | VOL+ | BRI- | BRI+ |       |       | ⏮  | F1   | F2   | F3  | F4  |
+            // | BT1  | BT2  | BT3  | BT4  | BT5  |       |       | ⏯  | F5   | F6   | F7  | F8  |
+            // | BCLR | RGB  | RST  |      |      |               | ⏭  | F9   | F10  | F11 | F12 |
+            //                     |      |      |       |               |      |      |      |
+            //
+            // Legend:
+            // - 🔇 = Mute
+            // - VOL-, VOL+ = Volume controls
+            // - BRI-, BRI+ = Brightness controls
+            // - ⏮ / ⏯ / ⏭ = Previous / Play-Pause / Next Track
+            // - BT1–BT5 = Bluetooth Profile Selects
+            // - BCLR = Clear Bluetooth Bonds
+            // - RGB = Toggle RGB
+            // - RST = Reset
+
 
             bindings = <
   &kp C_MUTE    &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_BRI_DN  &kp C_BRI_UP  &trans  &trans  &kp C_PREV  &kp F1  &kp F2   &kp F3   &kp F4
