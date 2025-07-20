@@ -34,10 +34,15 @@
             display-name = "Anymak:END";
 
             // ------------------------------------------------------------------------------
-            // |  Q  |  W  |  E  |  R  |  T  |  MUTE |  PP   |  Y  |  U   |  I  |  O  |  P  |
-            // |  A  |  S  |  D  |  F  |  G  |  LALT |  RALT |  H  |  J   |  K  |  L  |  ;  |
-            // |  Z  |  X  |  C  |  V  |  B  |               |  N  |  M   |  ,  |  .  |  /  |
-            //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
+            // |  Q  |  K  |  O  |  U  |  Y  |  [ (  |  ] )  |  V  |  D  |  C  |  L  |  F  |
+            // |  H  |  A  |  E  |  I  |  ,  |  TAB  |  / \  |  G  |  T  |  R  |  N  | ß S |
+            // |  ⇧  | ⌃ Z | ⎇ J| ⌘ . |  X  |       |       |  B  | ⌘ P | ⎇ M | ⌃ M |  ⇪  |
+            //             | DEL | LWR | ENT |       |       | SPC | RSE | BSP |
+            //
+            // Legend:
+            // - () indicates Mod-Tap (e.g., [ becomes LEFT_BRACKET when tapped, LEFT_PARENTHESIS when held)
+            // - ⎇ = Alt, ⌃ = Control, ⌘ = Command, ⇧ = Shift, ⇪ = Caps
+            // - LWR = Layer 2, RSE = Layer 1, LWR+RSE = Layer 3
 
             bindings = <
   &kp DE_Q        &kp DE_K               &kp DE_O           &kp DE_U                    &kp DE_Y      &mt DE_LEFT_BRACKET DE_LEFT_PARENTHESIS  &mt DE_RIGHT_BRACKET DE_RIGHT_PARENTHESIS  &kp DE_V   &kp DE_D                &kp DE_C            &kp DE_L                &kp DE_F
@@ -53,10 +58,15 @@
             display-name = "Number & Symbol Layer";
 
             // -----------------------------------------------------------------------------
-            // |  !  |  @  |  #  |  $  |  %  | LCTRL | RCTRL |  ^  |  &  |  *  |  (  |  )  |
-            // |     |     |     |     |     |  LALT | RALT  |  -  |  =  |  [  |  ]  |  \  |
-            // |     |     |     |     |     |               |  _  |  +  |  {  |  }  | "|" |
-            //                    | GUI |     | SPC |               | ENT |     | ALT |
+            // |  %  | $ € |  ö  |  ü  | ° ^ |  < {  |  > }  |  1  |  2  |  3  |  4  |  5  |
+            // |  |  | ~ ä |  =  |  -  |  +  |  #    |  *    |  @  |  ←  |  ↓  |  ↑  |  →  |
+            // | ⇧ & | ⌃ ` | ⎇ "| ⌘ ' | ! ? |               |  6  | ⌘ 7 | ⎇ 8 | ⌃ 9 | ⇪ 0 |
+            //             |     |     |     |               |     |     |     |
+            //
+            // Legend:
+            // - ⎇ = Alt, ⌃ = Control, ⌘ = Command, ⇧ = Shift, ⇪ = Caps
+            // - () indicates Mod-Tap
+            // - Layer is mainly numeric/symbol with modifiers and nav keys
 
             bindings = <
   &kp DE_PERCENT               &mt DE_DOLLAR DE_EURO      &kp DE_O_UMLAUT                &kp DE_U_UMLAUT          &mt DE_DEGREE DE_CARET          &mt DE_LESS_THAN DE_LEFT_BRACE  &mt DE_GREATER_THAN DE_RIGHT_BRACE  &kp N1        &kp N2                &kp N3            &kp NUMBER_4          &kp N5
@@ -80,10 +90,20 @@
             display-name = "Fn-Keys & Sys-Control";
 
             // --------------------------------------------------------------------------------
-            // |  1  |  2  |  3  |  4  |  5    |  LCTRL | RCTRL |  6  |  7  |  8  |  9  |  0  |
-            // | BT1 | BT2 | BT3 | BT4 | BT5   |  LALT  | RALT  | LFT | DWN |  UP | RGT |     |
-            // | BTCR| RGB | RST | BOOT| Unlock|        |       |     |     |     |     |     |
-            //                    | GUI |     | SPC   |        | ENT   |     | ALT |
+            // |  🔇  | VOL- | VOL+ | BRI- | BRI+ |       |       | ⏮  | F1   | F2   | F3  | F4  |
+            // | BT1  | BT2  | BT3  | BT4  | BT5  |       |       | ⏯  | F5   | F6   | F7  | F8  |
+            // | BCLR | RGB  | RST  |      |      |               | ⏭  | F9   | F10  | F11 | F12 |
+            //               |      |      |      |               |      |      |      |
+            //
+            // Legend:
+            // - 🔇 = Mute
+            // - VOL-, VOL+ = Volume controls
+            // - BRI-, BRI+ = Brightness controls
+            // - ⏮ / ⏯ / ⏭ = Previous / Play-Pause / Next Track
+            // - BT1–BT5 = Bluetooth Profile Selects
+            // - BCLR = Clear Bluetooth Bonds
+            // - RGB = Toggle RGB
+            // - RST = Reset
 
             bindings = <
   &kp C_MUTE    &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_BRI_DN  &kp C_BRI_UP  &trans  &trans  &kp C_PREV  &kp F1  &kp F2   &kp F3   &kp F4
