@@ -47,7 +47,7 @@
   &kp Q           &kp K               &kp O           &kp U                    &kp Y      &mt LEFT_BRACKET LEFT_PARENTHESIS  &mt RIGHT_BRACKET RIGHT_PARENTHESIS  &kp V      &kp D                &kp C            &kp L                &kp F
   &kp H           &kp A               &kp E           &kp I                    &kp COMMA  &mt BACKSLASH SLASH                &kp TAB                              &kp G      &kp T                &kp R            &kp N                &kp S
   &kp LEFT_SHIFT  &mt LEFT_CONTROL Z  &mt LEFT_ALT J  &mt LEFT_COMMAND PERIOD  &kp X                                                                              &kp B      &mt RIGHT_COMMAND P  &mt RIGHT_ALT M  &mt RIGHT_CONTROL W  &mt CAPSLOCK QUESTION
-                                      &kp DELETE      &mo 1                    &kp ENTER                                                                          &kp SPACE  &mo 2                &kp BACKSPACE
+                                      &kp DELETE      &sl 2                    &kp ENTER                                                                          &kp SPACE  &mo 2                &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
@@ -78,10 +78,10 @@
         Controls_and_Macros {
             display-name = "Mouse-, Direction- &  Screencontrols + VS Code Commands";
             bindings = <
-  &mt LS(LC(LA(LG(N1)))) LC(LA(LG(N1)))  &mt LS(LC(LA(LG(N2)))) LC(LA(LG(N2)))  &mt LS(LC(LA(LG(N3)))) LC(LA(LG(N3)))  &mt LS(LC(LA(LG(NUMBER_4)))) LC(LA(LG(NUMBER_4)))  &mt LS(LC(LA(LG(N0)))) LC(LA(LG(N0)))     &kp ESCAPE                 &mt LA(DOWN) LG(UP)                     &kp F2                           &msc SCRL_RIGHT  &msc SCRL_UP                     &msc SCRL_DOWN  &msc SCRL_LEFT
-  &mt LS(LC(LA(LG(Q)))) LC(LA(LG(Q)))    &mt LS(LC(LA(LG(W)))) LC(LA(LG(W)))    &mt LS(LC(LA(LG(E)))) LC(LA(LG(E)))    &mt LS(LC(LA(LG(R)))) LC(LA(LG(R)))                &mt LC(LA(LG(PERIOD))) LC(LA(LG(COMMA)))  &mt LS(LG(N5)) LS(LG(N4))  &mt LG(LEFT_BRACKET) LG(RIGHT_BRACKET)  &kp LS(LG(P))                    &mmv MOVE_LEFT   &mmv MOVE_DOWN                   &mmv MOVE_UP    &mmv MOVE_RIGHT
-  &kp LC(LA(LG(G)))                      &kp LC(LA(LG(H)))                      &kp LC(LA(LG(J)))                      &kp LC(LA(LG(K)))                                  &kp LC(LA(LG(M)))                                                                                            &mt LA(LG(DOWN)) LA(LG(D))       &kp LEFT         &kp DOWN                         &kp UP          &kp RIGHT
-                                                                                &mkp RCLK                              &mkp MCLK                                          &mkp LCLK                                                                                                    &mt LS(LA(LG(F))) LS(LA(LG(S)))  &trans           &mt LS(LA(LG(D))) LS(LA(LG(A)))
+  &mt LS(LC(LA(LG(N1)))) LC(LA(LG(N1)))  &mt LS(LC(LA(LG(N2)))) LC(LA(LG(N2)))  &mt LS(LC(LA(LG(N3)))) LC(LA(LG(N3)))  &mt LS(LC(LA(LG(NUMBER_4)))) LC(LA(LG(NUMBER_4)))  &mt LS(LC(LA(LG(N0)))) LC(LA(LG(N0)))     &kp ESCAPE                 &mt LA(DOWN) LG(UP)                     &kp F2                      &msc SCRL_RIGHT  &msc SCRL_UP    &msc SCRL_DOWN  &msc SCRL_LEFT
+  &mt LS(LC(LA(LG(Q)))) LC(LA(LG(Q)))    &mt LS(LC(LA(LG(W)))) LC(LA(LG(W)))    &mt LS(LC(LA(LG(E)))) LC(LA(LG(E)))    &mt LS(LC(LA(LG(R)))) LC(LA(LG(R)))                &mt LC(LA(LG(PERIOD))) LC(LA(LG(COMMA)))  &mt LS(LG(N5)) LS(LG(N4))  &mt LG(LEFT_BRACKET) LG(RIGHT_BRACKET)  &kp LS(LG(P))               &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT
+  &kp LC(LA(LG(G)))                      &kp LC(LA(LG(H)))                      &kp LC(LA(LG(J)))                      &kp LC(LA(LG(K)))                                  &kp LC(LA(LG(M)))                                                                                            &mt LA(LG(DOWN)) LA(LG(D))  &kp LEFT         &kp DOWN        &kp UP          &kp RIGHT
+                                                                                &mt LC(LA(LG(D))) LC(LA(LG(A)))        &sl 0                                              &mt LC(LA(LG(F))) LC(LA(LG(S)))                                                                              &mkp LCLK                   &mkp MCLK        &mkp RCLK
             >;
         };
 
