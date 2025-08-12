@@ -26,6 +26,17 @@
         };
     };
 
+    behaviors {
+        mo_tog: mo_tog {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MO_TOG";
+            bindings = <&mo>, <&tog>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -47,7 +58,7 @@
   &kp Q           &kp K               &kp O           &kp U                    &kp Y      &mt LEFT_BRACKET LEFT_PARENTHESIS  &mt RIGHT_BRACKET RIGHT_PARENTHESIS  &kp V      &kp D                &kp C            &kp L                &kp F
   &kp H           &kp A               &kp E           &kp I                    &kp COMMA  &mt BACKSLASH SLASH                &kp TAB                              &kp G      &kp T                &kp R            &kp N                &kp S
   &kp LEFT_SHIFT  &mt LEFT_CONTROL Z  &mt LEFT_ALT J  &mt LEFT_COMMAND PERIOD  &kp X                                                                              &kp B      &mt RIGHT_COMMAND P  &mt RIGHT_ALT M  &mt RIGHT_CONTROL W  &mt CAPSLOCK QUESTION
-                                      &kp DELETE      &tog 2                   &kp ENTER                                                                          &kp SPACE  &mo 2                &kp BACKSPACE
+                                      &kp DELETE      &mo_tog 2 2              &kp ENTER                                                                          &kp SPACE  &mo_tog 1 1          &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
