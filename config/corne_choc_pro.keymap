@@ -34,6 +34,15 @@
             #binding-cells = <0>;
             bindings = <&mo 2>, <&tog 2>;
         };
+
+        ht_mo_tog: ht_mo_tog {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_MO_TOG";
+            bindings = <&mo>, <&tog>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
@@ -57,7 +66,7 @@
   &kp DE_Q        &kp DE_K               &kp DE_O           &kp DE_U                    &kp DE_Y      &mt DE_LEFT_BRACKET DE_LEFT_PARENTHESIS  &mt DE_RIGHT_BRACKET DE_RIGHT_PARENTHESIS  &kp DE_V   &kp DE_D                &kp DE_C            &kp DE_L                &kp DE_F
   &kp DE_H        &kp DE_A               &kp DE_E           &kp DE_I                    &kp DE_COMMA  &mt DE_BACKSLASH DE_SLASH                &kp TAB                                    &kp DE_G   &kp DE_T                &kp DE_R            &kp DE_N                &kp DE_S
   &kp LEFT_SHIFT  &mt LEFT_CONTROL DE_Z  &mt LEFT_ALT DE_J  &mt LEFT_COMMAND DE_PERIOD  &kp DE_X                                                                                          &kp DE_B   &mt RIGHT_COMMAND DE_P  &mt RIGHT_ALT DE_M  &mt RIGHT_CONTROL DE_W  &mt CAPSLOCK DE_QUESTION
-                                         &kp DELETE         &td_mo_tog_2                &kp ENTER                                                                                         &kp SPACE  &mo 1                   &kp BACKSPACE
+                                         &kp DELETE         &ht_mo_tog 2 2              &kp ENTER                                                                                         &kp SPACE  &mo 1                   &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
