@@ -81,7 +81,7 @@
 
             bindings = <
   &kp DE_PERCENT  &kp DE_EURO                &kp DE_O_UMLAUT                &kp DE_U_UMLAUT          &kp DE_DEGREE       &mt DE_LESS_THAN DE_LEFT_BRACE  &mt DE_GREATER_THAN DE_RIGHT_BRACE  &kp N1        &kp N2                &kp N3            &kp NUMBER_4          &kp N5
-  &kp DE_PIPE     &mt DE_TILDE DE_A_UMLAUT   &kp DE_MINUS                   &kp DE_MINUS             &kp DE_PLUS         &kp DE_ASTERISK                 &kp DE_HASH                         &kp DE_CARET  &kp DE_AT             &kp DE_AMPERSAND  &kp DE_DOLLAR         &kp DE_SHARP_S
+  &kp DE_PIPE     &mt DE_TILDE DE_A_UMLAUT   &kp DE_MINUS                   &kp DE_EQUAL             &kp DE_PLUS         &kp DE_ASTERISK                 &kp DE_HASH                         &kp DE_CARET  &kp DE_AT             &kp DE_AMPERSAND  &kp DE_DOLLAR         &kp DE_SHARP_S
   &kp LEFT_SHIFT  &mt LEFT_CONTROL DE_GRAVE  &mt LEFT_ALT DE_DOUBLE_QUOTES  &mt LEFT_COMMAND DE_SQT  &kp DE_EXCLAMATION                                                                      &kp N6        &mt RIGHT_COMMAND N7  &mt RIGHT_ALT N8  &mt RIGHT_CONTROL N9  &mt CAPSLOCK N0
                                              &trans                         &none                    &trans                                                                                  &trans        &trans                &trans
             >;
